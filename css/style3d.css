@@ -1,0 +1,121 @@
+.wrap {top:15%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardskill {
+  width: 300px;
+  height: 450px;
+  position: relative;
+  
+  margin: 50px;
+
+}
+.wrap .cardskill:hover .front {
+  transform: rotateY(180deg);
+}
+.wrap .cardskill:hover .front:after {
+  display: none;
+}
+.wrap .cardskill:hover .back {
+  transform: rotateY(360deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s;
+  backface-visibility: hidden;
+  overflow: hidden;
+	border-radius: 20px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	z-index: 100;
+	
+}
+.front img,
+.back img {
+  width: 100%;
+
+}
+
+.front {
+  background-color: transparent;
+z-index: 100;
+}
+
+
+.back {
+  background:linear-gradient(to right bottom, rgba(255,255,255,1.0), rgba(255,255,255,0.6));
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  transform: rotateY(180deg);
+	z-index: 100;
+}
+.back h4{font-size: 28px; color: rgba(255,0,4,1.00); padding-bottom: 20px;font-family: poppin;}
+.back h2{font-size: 20px;color: #0FABBC}
+@keyframes example {
+  0% {
+    top: -240%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+
+
+
+@media screen and (max-width: 576px){
+	.glass2{width: 100%; height: 100%;}
+	.circle6,.circle7{display: none;}
+	.wrap{width: 100%;height: 100%}
+	.wrap .cardskill{display: flex;justify-content: center;flex-direction: column;height: 180px;width: 120px;margin: 0 auto}
+	.wrap .cardskill .front{background-color: transparent;border: none;height: 180px;width: 120px;overflow: hidden;}
+	.wrap .cardskill .back{background-color: white;border: none;height: 180px;width: 120px;overflow: hidden;}
+	.wrap .cardskill .back h2{padding: 0;font-size: 12px;}
+	.wrap .cardskill .back h4{padding: 0;font-size: 14px;}
+	.see h1{font-size: 36px}
+	.see h2{font-size: 18px; top:20%;}
+}
+@media screen and (min-width: 576px) and (max-width: 768px){
+.glass2{width: 100%; height: 100%;}
+	.circle6,.circle7{display: none;}
+	.wrap{width: 100%;height: 100%;top:10%;}
+	.wrap .cardskill{display: flex;justify-content: center;flex-direction: column;height: 180px;width: 120px;margin: 0 auto}
+	.wrap .cardskill .front{background-color: transparent;border: none;height: 180px;width: 120px;overflow: hidden;}
+	.wrap .cardskill .back{background-color: white;border: none;height: 180px;width: 120px;overflow: hidden;}
+	.wrap .cardskill .back h2{padding: 0;font-size: 12px;}
+	.wrap .cardskill .back h4{padding: 0;font-size: 14px;}
+	.see h1{font-size: 36px}
+	.see h2{font-size: 18px; top:20%;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.wrap{width: 100%;height: 100%}
+	.wrap .cardskill{display: flex;justify-content: center;flex-direction: column;height: 180px;width: 120px;margin: 0 auto}
+	.wrap .cardskill .front{background-color: transparent;border: none;height: 180px;width: 120px;overflow: hidden;}
+	.wrap .cardskill .back{background-color: white;border: none;height: 180px;width: 120px;overflow: hidden;}
+	.circle6{display: none;}
+	.see h1{font-size: 36px}
+	.see h2{font-size: 18px; top:20%;}	
+}
+@media screen and (min-width: 1024px) and (max-width: 2140px){
+		.wrap .cardskill{display: flex;justify-content: center;flex-direction: column;margin: 0 auto}
+	.wrap .cardskill .front{background-color: transparent;border: none;overflow: hidden;}
+	.wrap .cardskill .back{background-color: white;border: none;overflow: hidden;}
+}
