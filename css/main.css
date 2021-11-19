@@ -1,0 +1,469 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: poppin;
+	src: url("../font/Poppins-Bold.ttf");
+}
+@font-face{
+	font-family: poppin3;
+	src: url("../font/Poppins-Regular.ttf");
+}
+@font-face{
+	font-family: poppin2;
+	src: url("../font/Poppins-Thin.ttf");
+}
+body{
+	
+	height: 100vh;
+}
+
+.container5{width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+	background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+
+
+.glass{position: absolute;
+	display: flex;
+	
+	min-height: 85vh;
+	width: 70%;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+	border-radius: 20px;
+	z-index: 5;
+	overflow: hidden;
+
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+}
+.glassleft{
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	float: left;
+	background-color: transparent;
+	z-index:1;
+}
+
+.circle1, .circle2, .circle3, .circle4,.circle5 {
+	background: #FFFFFF;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.1));
+	height: 30rem;
+	width: 30rem;
+	position: absolute;
+	
+	border-radius: 50%;
+}
+
+.circle1{
+		top: 5%;
+right: 15%;
+		z-index: 1;
+
+}
+
+.circle2{
+		bottom: 5%;
+	left: 10%;
+		z-index: 1;
+}
+.circle3{
+		top: 35%;
+	left: 10%;
+		z-index: 1;
+}
+.circle4{
+		top: 35%;
+	right: 10%;
+		z-index: 1;
+}
+.circle6 {
+	
+
+	height: 35rem;
+	width: 35rem;
+	position: absolute;
+	
+	border-radius: 50%;
+}
+.circle6{
+		top: 0rem;
+	left: -15rem;
+		z-index: 1;
+	border:5rem solid rgba(255,255,255,0.5);
+}
+.circle7{
+		top: 30rem;
+	right: -20rem;
+		z-index: 1;
+	border:5rem solid rgba(255,255,255,0.5);
+	height: 40rem;
+	width: 40rem;
+	position: absolute;
+	
+	border-radius: 50%;
+}
+.circle8{
+		top: 22rem;
+	right: -7rem;
+		z-index: 1;
+	border:5rem solid rgba(255,255,255,0.43);
+	height: 35rem;
+	width: 35rem;
+	position: absolute;
+	background-color: rgba(255,255,255,0.41);
+	border-radius: 50%;
+}
+.hinhtron{width: 100%;height: auto;display: flex;justify-content: center;align-items: center;background-color: chocolate}
+.chu{background-color: transparent;
+	width: 70%;
+	height: 30%;
+	font-family: poppin3;
+	font-size: 20px;
+	position: absolute;
+	padding-top: 200px;
+	padding-left: 25px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	letter-spacing: 0.5px;
+	min-width: 450px;
+	color:black;
+	
+	
+	
+}
+.pham{background-color: transparent;
+	width: 80%;height: auto;
+	font-family: poppin3;
+	top:26%;
+	position: absolute;
+	padding-left:25px;
+	font-size: 28px;
+	display: flex;
+	
+	
+	color:black;
+	
+}
+.ducan{width: 100%;
+height: 50%;
+background-color: transparent;
+
+
+position: absolute;
+font-family: poppin;
+display: flex;
+padding-left: 24px;
+align-items: center;
+
+}
+.ducan h2{
+	position: absolute;
+	font-size: 120px;
+	transform: translate(0%,-70%);
+	
+}
+
+.ducan h2:nth-child(1){
+	color: transparent;
+	-webkit-text-stroke: 1px #ffffff;
+}
+.ducan h2:nth-child(2){
+	color: rgba(255,255,255,0.90);
+	animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate
+{
+	0%,100%
+	{
+	clip-path: polygon(0 58%, 5% 48%, 11% 40%, 17% 36%, 24% 40%, 28% 47%, 32% 53%, 36% 59%, 43% 64%, 52% 65%, 60% 58%, 64% 50%, 70% 43%, 78% 38%, 84% 41%, 89% 48%, 94% 53%, 100% 58%, 100% 100%, 0% 100%);}
+	50%
+	{
+	clip-path: polygon(0 51%, 5% 56%, 12% 61%, 19% 60%, 25% 58%, 30% 56%, 35% 55%, 40% 53%, 44% 48%, 50% 48%, 56% 51%, 61% 56%, 67% 60%, 74% 62%, 81% 64%, 88% 61%, 94% 55%, 100% 49%, 100% 100%, 0% 100%);
+}
+}
+.icons{
+	width: 40%;height:auto;
+	padding-left: 25px;
+ background-color: transparent;
+min-height: 10vh;
+	position: absolute;
+		bottom: 2%;
+	  display: flex;
+  align-items: center;
+  align-content: center;
+	
+	
+}
+.icons img {height: 80%;width: 80%}
+.chu2{
+	width: 20%;height: 80px;
+	font-family: poppin3;
+	margin-left: 25px;
+	bottom: 20%;
+	min-height: 5vh;
+	position: absolute;
+	border-top: 1px solid rgba(255,255,255,1.00);
+	border-left: 1px solid rgba(255,255,255,0.50);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	border-radius: 10px;
+	color:white;
+	background: rgba(64,131,180,0.7);
+	padding-top: 15px;
+	
+}
+.chu2 p{font-size: 28px;}
+.chuky{
+	width: 300px;height: 90px;
+	font-family: poppin3;
+	position: absolute;
+	bottom: 20%;
+	right: 23%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	color: transparent;
+	border-bottom-width: 2px medium;
+}
+.chukya{
+	width: 300px;height: auto;
+	
+	position: absolute;
+	
+	right: 20%;
+	bottom: 18%;
+	display: flex;
+}
+.hinh{width: 100%;
+height: 100%;
+background: rgba(255,255,255,0.00);
+left: 20%;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+bottom: -22%;
+}
+
+.container2{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+	background: linear-gradient(to right bottom, #65dfc9, #6cdbeb);
+	
+}
+
+.card
+{
+	
+	width: 420px;
+	height: 600px;
+	margin: 50px;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 5%;
+	background-color: transparent;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255,255,255,1.00);
+	border-left: 1px solid rgba(0,0,0,0.50);
+	-webkit-transition: all 1s linear;
+			-moz-transition: all 1s linear;
+			-ms-transition: all 1s linear;
+			-o-transition: all 1s linear;
+			transition: all 1s linear;
+			z-index: 5;	
+	color:#22C2D8
+}
+.card .content{
+	text-align: center;
+	padding: 40px;
+	transform: translateY(100px);
+	opacity: 0;
+}
+.card:hover .content
+{
+	transform: translateY(0);
+	opacity: 1;
+}
+.card .content h2
+{	font-family: poppin;
+	position: absolute;
+	top: -30px;
+	right: 30px;
+	font-size: 8em;
+	color: rgba(255,255,255,0.50);
+	pointer-events: none;
+}
+.card .content h3
+{	font-family: poppin;
+	font-size: 3em;
+	 color: rgba(255,255,255,1.00);
+	z-index: 10;
+	
+}
+.card .content p
+{	font-family: poppin3;
+	font-size: 1.2em;
+	font-weight: 300;
+	color: white;
+	padding: 0 8px;
+}
+.card .content a
+{
+	position: relative;
+	display: inline-block;
+	padding: 8px 20px;
+	margin-top: 15px;
+	background: linear-gradient(to right bottom, #D0FFEA, #34EBE9);
+	color: black;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: 500;
+	font-family: poppin3;
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.container4{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	background: linear-gradient(to right bottom, #65dfc9, #6cdbeb);
+	
+}
+.the{display: flex;
+justify-content: center;
+background-color: transparent;
+width: 60%;
+position: relative;}
+@media screen and (max-width: 576px){
+.glass{width: 80%;}
+	.circle2{width: 10rem; height: 10rem; left: 5%;}
+	.circle1{width: 10rem; height: 10rem; right: 5%; }
+	.circle3{width: 10rem; height: 10rem; left: 5%; top:15%}
+	.circle4{width: 10rem; height: 10rem; right: 5%; top: 65% }
+	.ducan h2{font-size: 45px;  top:10%}
+	
+	.pham{display: none;}
+	.container2 {height: 100vh; display: flex;flex-direction: column; justify-content: center;align-content: center;align-items: center;}
+	.hinh{max-width: 70%;height:auto; top:20%; left: 45%;}
+	.chukya{display: none;}
+	.chuky{display: none;}
+	.chu {top:20%; }
+	.chu p{font-size: 12px; margin-top:0px;padding-right: 240px}
+	.chu2{width: 45%;height: 50px;}
+	.chu2 p{font-size: 12px;}
+	.icons {padding: 20px; bottom:-2%; left: 0%; width: 70%;}
+	.icons img{width: 100%; height: 100%;}
+	
+	.card .content {padding: 20px}
+	.card .content a{font-size: 12px;}
+	.container2 .card .content p{ font-size: 12px;padding: 5px;}
+	.the {width: 80%; height: 50%; background-color: transparent;}
+	.card {width: 60%; height: 90%; background-color: skyblue; border-radius: 20px;}
+	
+	.container2 .card .content h2 {top:-30px; right: 10px; }
+	.container2 .card .content h3 {margin-top:20px;font-size: 1.4rem; color:white; }	
+	
+}
+@media screen and (min-width: 576px) and (max-width: 768px){
+.glass{width: 80%;}
+
+	.ducan h2{font-size: 45px;  top:10%}
+	
+	.pham{display: none;}
+	.container2{height: 100vh;}
+	.hinh{max-width: 70%;height:auto; top:15%; left: 45%;}
+	.chukya{display: none;}
+	.chuky{display: none;}
+	.chu {top:38%; padding-right: 50px}
+	.chu2 {width:45%;top:80%; height: 40px;}
+	.chu2 p{font-size: 14px;}
+	.icons {padding: 20px; bottom:-2%; left: 0%; width: 70%;}
+	.icons img{width: 100%; height: 100%;}
+	.chu p{font-size: 14px;}
+	
+	.container2 {height: 100vh; display: flex;flex-direction: column; justify-content: center;align-content: center;align-items: center;}
+	.container2 .card .content p{ font-size: 12px;padding: 8px 10px;}
+		.the {width: 80%; height: 50%; background-color: transparent;}
+	.card {width: 35%; height: 90%;}
+	.container2 .card .content h2 {top:-20px; right: 10px; }
+	.container2 .card .content h3 {top:0px;font-size: 1.5rem; color:rgba(27,55,101,1.00); }	
+	.card .content a{font-size: 12px;}
+	.card .content p{font-size: 20px;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.circle3{width: 8rem; height: 8rem; left: 5%; top:15%}
+	.circle4{width: 8rem; height: 8rem; right: 5%; top: 65% }
+	.glass{width: 80%;}
+	.hinh{max-width: 60%;height:auto; top:15%; left: 45%;}
+	.ducan h2{font-size: 100px;left: 3%; top:20%}
+	.chu {width: 90%;top:30%}
+	.chu p{font-size: 20px}
+	.chu2 {width:40%;top:70%; height: 50px;}
+	.chu2 p{font-size:20px;}
+	.chukya{display: none;}
+	.chuky{display: none;}
+	.the {width: 80%; height: 65%; background-color: transparent;}
+	.card{margin: 50px 0;}
+
+	.card .content h2 {top:-20px; right: 10px; }
+	.card .content h3 {top:0px;font-size: 2.5rem; color:white; }	
+	.card .content {padding: 10px}
+	.card .content p{font-size:24px;}
+	.icons img{width: 85%; height: 85%;}
+}
+@media screen and (min-width: 1024px) and (max-width: 2140px){
+		.circle2{width: 30rem; height: 30rem; left: 5%;}
+	.circle1{width: 30rem; height: 30rem; right: 5%; }
+	.circle3{width: 20rem; height: 20rem; left: 5%; top:15%}
+	.circle4{width: 20rem; height: 20rem; right: 5%; top: 65% }
+	.chu p{font-size: 20px}
+	.chukya{display: none;}
+	.chuky{display: none;}
+	.chu {width: 700px;top:30%;}
+	.chu2 {width:260px; height: 50px;}
+	.chu2 p{font-size: 24px;}
+	.icons img{width: 85%; height: 85%;}
+	.card .content p{font-size: 24px;}
+	.ducan h2{font-size: 100px;left: 3%; top:20%}
+	.bc .bcleft img{width: auto;height: 100%}
+	
+}
